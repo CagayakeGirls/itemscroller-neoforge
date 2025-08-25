@@ -2769,7 +2769,7 @@ public class InventoryUtils
         {
             ClientStatusC2SPacket packet = new ClientStatusC2SPacket(ClientStatusC2SPacket.Mode.REQUEST_STATS);
 
-            mc.getNetworkHandler().sendPacket(packet);
+            mc.getNetworkHandler().send(packet);
             selectedSlotUpdateTask = () -> trySort(gui, range.first(), range.second(), shulkerBoxFix, swapSlot);
         }
         else
@@ -3124,7 +3124,7 @@ public class InventoryUtils
 
     private static boolean isBundle(ItemStack stack)
     {
-        return stack.isOf(Items.BUNDLE) || stack.getComponents().contains(DataComponentTypes.BUNDLE_CONTENTS);
+        return stack.isOf(Items.BUNDLE) || stack.getComponents().has(DataComponentTypes.BUNDLE_CONTENTS);
     }
 
     private static boolean isEmptyBundle(ItemStack stack)
