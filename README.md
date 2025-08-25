@@ -2,9 +2,9 @@
 
 <img height="100" src="src/main/resources/icon.png" width="100"/>
 
-# Rock‘nRoller for NeoForge
+# Rock‘n Roller for NeoForge
 
-MaLiLib unofficial NeoForge port.
+ItemScroller unofficial NeoForge port.
 
 <img alt="neoforge" height="56" src="https://raw.githubusercontent.com/KessokuTeaTime/badges-extra/main/assets/cozy/supported/neoforge_vector.svg">
 
@@ -17,13 +17,15 @@ MaLiLib unofficial NeoForge port.
 
 </div></center>
 
-MaFgLib is a library mod used by Masa's mods NeoForge port. It contains some common code previously
-duplicated in most of the mods, such as multi-key capable keybinds, configuration GUIs etc.
+Rock‘n Roller is a Minecraft mod that adds various convenience features for moving items
+inside inventory GUIs. Examples are scrolling the mouse wheel over slots with items in them
+or Shift/Ctrl + click + dragging over slots to move items from them in various ways etc.
+
+Item scrolling is basically what the old NEI mod did and Mouse Tweaks also does.
+This mod has some different drag features compared to Mouse Tweaks, and also some special
+villager trading related helper features as well as crafting helper features.
 
 [Original Repo Readme](Original-README.md)
-
-## How to use in Minecraft
-See [malilib wiki](https://github.com/maruohon/malilib/wiki)
 
 ## Development
 
@@ -47,11 +49,11 @@ repositories {
 }
 
 dependencies {
-    modImplementation "team.cagayakegirls.mafglib:mafglib:${mafglib_version}"
+    modImplementation "team.cagayakegirls.rocknroller:rocknroller:${mafglib_version}"
 }
 ```
 
-> Note: "${mafglib_version}" can be found in [Modrinth](https://modrinth.com/mod/mafglib)
+> Note: "${mafglib_version}" can be found in [Modrinth](https://modrinth.com/mod/rocknroller)
 
 ## Compiling
 - Clone the repository
@@ -60,5 +62,5 @@ dependencies {
 - The built jar file will be in build/libs/
 
 ## Credits
-- [maruohon/malilib](https://github.com/maruohon/malilib)
-- [sakura-ryoko/malilib](https://github.com/sakura-ryoko/malilib)
+- [maruohon/itemscroller](https://github.com/maruohon/itemscroller)
+- [sakura-ryoko/itemscroller](https://github.com/sakura-ryoko/itemscroller)
