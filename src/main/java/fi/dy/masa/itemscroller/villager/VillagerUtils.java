@@ -34,7 +34,7 @@ public class VillagerUtils
                 handler.switchTo(visibleIndex);
 
                 // Use the real (server-side) index
-                MinecraftClient.getInstance().getNetworkHandler().sendPacket(new SelectMerchantTradeC2SPacket(realIndex));
+                MinecraftClient.getInstance().getNetworkHandler().send(new SelectMerchantTradeC2SPacket(realIndex));
 
                 return true;
             }
