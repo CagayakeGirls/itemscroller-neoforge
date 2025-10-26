@@ -12,10 +12,6 @@ repositories {
 	maven { url = 'https://jitpack.io' }
 }
 
-loom {
-	accessWidenerPath = file("src/main/resources/itemscroller.accesswidener")
-}
-
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings extraMappings.yarnWithPatch(project.mappings_version, "1.21+build.4")
@@ -47,6 +43,8 @@ loom {
 //			ideConfigGenerated false
 //		}
 //	}
+
+    accessWidenerPath = file("src/main/resources/itemscroller.accesswidener")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -100,6 +98,8 @@ jar {
 		rename { "${it}_${base.archivesName}"}
 	}
 }
+
+remapJar.atAccessWideners.add("itemscroller.accesswidener")
 
 tasks.publish.dependsOn build
 publishing {
