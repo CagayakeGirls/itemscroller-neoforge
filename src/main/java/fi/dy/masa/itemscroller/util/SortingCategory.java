@@ -2,16 +2,15 @@ package fi.dy.masa.itemscroller.util;
 
 import java.util.Collection;
 import java.util.Iterator;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import com.google.common.collect.ImmutableList;
-
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
-
+import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigLockedListEntry;
 import fi.dy.masa.malilib.config.IConfigLockedListType;
 import fi.dy.masa.malilib.util.StringUtils;
@@ -141,7 +140,7 @@ public class SortingCategory implements IConfigLockedListType
         }
 
         @Override
-        public String asString()
+        public @Nonnull String asString()
         {
             return this.configKey;
         }

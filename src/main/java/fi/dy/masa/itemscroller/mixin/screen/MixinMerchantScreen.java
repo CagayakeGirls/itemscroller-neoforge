@@ -1,7 +1,6 @@
 package fi.dy.masa.itemscroller.mixin.screen;
 
 import javax.annotation.Nullable;
-
 import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;

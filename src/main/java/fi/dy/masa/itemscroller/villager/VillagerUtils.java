@@ -3,7 +3,6 @@ package fi.dy.masa.itemscroller.villager;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import it.unimi.dsi.fastutil.ints.IntArrayList;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.MerchantScreen;
@@ -11,6 +10,7 @@ import net.minecraft.network.packet.c2s.play.SelectMerchantTradeC2SPacket;
 import net.minecraft.screen.MerchantScreenHandler;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOfferList;
+import it.unimi.dsi.fastutil.ints.IntArrayList;
 import fi.dy.masa.malilib.util.GuiUtils;
 
 public class VillagerUtils

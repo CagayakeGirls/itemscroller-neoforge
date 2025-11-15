@@ -1,12 +1,11 @@
 package fi.dy.masa.itemscroller.villager;
 
 import javax.annotation.Nullable;
-import it.unimi.dsi.fastutil.ints.IntArrayList;
-import java.util.UUID;
-
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtInt;
 import net.minecraft.nbt.NbtList;
+import it.unimi.dsi.fastutil.ints.IntArrayList;
+import java.util.UUID;
 
 public class VillagerData
 {

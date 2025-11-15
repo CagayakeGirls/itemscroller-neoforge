@@ -1,15 +1,14 @@
 package fi.dy.masa.itemscroller.event;
 
+import fi.dy.masa.malilib.render.InventoryOverlay;
+import fi.dy.masa.malilib.render.RenderUtils;
+import fi.dy.masa.malilib.util.GuiUtils;
+import fi.dy.masa.malilib.util.StringUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.item.ItemStack;
-
-import fi.dy.masa.malilib.render.InventoryOverlay;
-import fi.dy.masa.malilib.render.RenderUtils;
-import fi.dy.masa.malilib.util.GuiUtils;
-import fi.dy.masa.malilib.util.StringUtils;
 import fi.dy.masa.itemscroller.config.Configs;
 import fi.dy.masa.itemscroller.recipes.RecipePattern;
 import fi.dy.masa.itemscroller.recipes.RecipeStorage;

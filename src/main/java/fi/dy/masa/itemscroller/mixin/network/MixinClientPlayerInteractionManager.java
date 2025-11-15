@@ -22,8 +22,9 @@ public class MixinClientPlayerInteractionManager
         }
     }
 
-    @Redirect(method = "clickSlot", at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/client/network/ClientPlayNetworkHandler;send(Lnet/minecraft/network/packet/Packet;)V"))
+    @Redirect(method = "clickSlot",
+              at = @At(value = "INVOKE",
+                       target = "Lnet/minecraft/client/network/ClientPlayNetworkHandler;send(Lnet/minecraft/network/packet/Packet;)V"))
     private void bufferClickPacketsAndCancel(ClientPlayNetworkHandler netHandler, Packet<?> packet)
     {
         /*

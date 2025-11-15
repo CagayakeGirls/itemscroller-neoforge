@@ -1,7 +1,10 @@
 package fi.dy.masa.itemscroller.event;
 
 import org.lwjgl.glfw.GLFW;
-
+import fi.dy.masa.malilib.gui.GuiBase;
+import fi.dy.masa.malilib.hotkeys.*;
+import fi.dy.masa.malilib.util.GuiUtils;
+import fi.dy.masa.malilib.util.KeyCodes;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen;
@@ -12,11 +15,6 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.MathHelper;
-
-import fi.dy.masa.malilib.gui.GuiBase;
-import fi.dy.masa.malilib.hotkeys.*;
-import fi.dy.masa.malilib.util.GuiUtils;
-import fi.dy.masa.malilib.util.KeyCodes;
 import fi.dy.masa.itemscroller.Reference;
 import fi.dy.masa.itemscroller.config.Configs;
 import fi.dy.masa.itemscroller.config.Hotkeys;
@@ -218,7 +216,7 @@ public class InputHandler implements IKeybindProvider, IKeyboardInputHandler, IM
                     }
                     else if (Configs.Toggles.SHIFT_PLACE_ITEMS.getBooleanValue() &&
                              isAttack && isShiftDown &&
-                             InventoryUtils.canShiftPlaceItems(gui))
+                             InventoryUtils.canShiftPlaceItems(gui) && slot != null)
                     {
                         cancel |= InventoryUtils.shiftPlaceItems(slot, gui);
                     }

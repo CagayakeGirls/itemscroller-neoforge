@@ -1,9 +1,9 @@
 package fi.dy.masa.itemscroller.gui;
 
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.util.Identifier;
 import fi.dy.masa.malilib.gui.interfaces.IGuiIcon;
 import fi.dy.masa.malilib.render.RenderUtils;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.util.Identifier;
 import fi.dy.masa.itemscroller.Reference;
 
 public enum ItemScrollerIcons implements IGuiIcon

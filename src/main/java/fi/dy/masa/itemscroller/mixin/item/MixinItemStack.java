@@ -1,7 +1,5 @@
 package fi.dy.masa.itemscroller.mixin.item;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -10,6 +8,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import fi.dy.masa.itemscroller.config.Configs;
 import fi.dy.masa.itemscroller.util.InventoryUtils;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.item.ItemStack;
 
 @Mixin(ItemStack.class)
 public abstract class MixinItemStack

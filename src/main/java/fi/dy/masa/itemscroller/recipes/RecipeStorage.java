@@ -5,7 +5,6 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nonnull;
-
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.nbt.NbtCompound;
@@ -15,7 +14,6 @@ import net.minecraft.recipe.NetworkRecipeId;
 import net.minecraft.recipe.RecipeDisplayEntry;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.screen.slot.Slot;
-
 import fi.dy.masa.malilib.util.FileUtils;
 import fi.dy.masa.malilib.util.StringUtils;
 import fi.dy.masa.malilib.util.game.RecipeBookUtils;

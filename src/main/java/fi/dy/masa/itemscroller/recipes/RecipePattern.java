@@ -1,12 +1,12 @@
 package fi.dy.masa.itemscroller.recipes;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import com.llamalad7.mixinextras.lib.apache.commons.tuple.Pair;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import com.llamalad7.mixinextras.lib.apache.commons.tuple.Pair;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -20,7 +20,6 @@ import net.minecraft.nbt.NbtList;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
-import net.minecraft.recipe.display.SlotDisplayContexts;
 import net.minecraft.recipe.input.CraftingRecipeInput;
 import net.minecraft.recipe.input.RecipeInput;
 import net.minecraft.registry.DynamicRegistryManager;
@@ -33,8 +32,8 @@ import net.minecraft.world.World;
 import fi.dy.masa.malilib.util.game.RecipeBookUtils;
 import fi.dy.masa.itemscroller.ItemScroller;
 import fi.dy.masa.itemscroller.mixin.recipe.IMixinClientRecipeBook;
-import fi.dy.masa.itemscroller.mixin.screen.IMixinRecipeBookScreen;
 import fi.dy.masa.itemscroller.mixin.recipe.IMixinRecipeBookWidget;
+import fi.dy.masa.itemscroller.mixin.screen.IMixinRecipeBookScreen;
 import fi.dy.masa.itemscroller.recipes.CraftingHandler.SlotRange;
 import fi.dy.masa.itemscroller.util.InventoryUtils;
 
@@ -213,7 +212,7 @@ public class RecipePattern
         ContextParameterMap map = RecipeBookUtils.getMap(mc);
         Map<NetworkRecipeId, RecipeDisplayEntry> recipeMap = ((IMixinClientRecipeBook) recipeBook).itemscroller_getRecipeMap();
 
-        if (recipeMap.size() < 1)
+        if (recipeMap.size() < 1 || map == null)
         {
             return null;
         }
@@ -379,6 +378,7 @@ public class RecipePattern
                     Map<NetworkRecipeId, RecipeDisplayEntry> recipeMap = ((IMixinClientRecipeBook) recipeBook).itemscroller_getRecipeMap();
                     ContextParameterMap map = RecipeBookUtils.getMap(mc);
 
+					if (map == null) return;
                     if (recipeMap.containsKey(id))
                     {
                         RecipeDisplayEntry entry = recipeMap.get(id);

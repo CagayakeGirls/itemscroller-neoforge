@@ -1,18 +1,16 @@
 package fi.dy.masa.itemscroller.villager;
 
 import javax.annotation.Nullable;
-import it.unimi.dsi.fastutil.ints.IntArrayList;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.*;
-
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.nbt.NbtSizeTracker;
 import net.minecraft.screen.MerchantScreenHandler;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOfferList;
-
+import it.unimi.dsi.fastutil.ints.IntArrayList;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.*;
 import fi.dy.masa.malilib.util.FileUtils;
 import fi.dy.masa.malilib.util.StringUtils;
 import fi.dy.masa.malilib.util.nbt.NbtUtils;

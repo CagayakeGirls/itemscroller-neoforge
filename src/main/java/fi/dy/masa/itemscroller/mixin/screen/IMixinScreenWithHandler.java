@@ -1,9 +1,9 @@
 package fi.dy.masa.itemscroller.mixin.screen;
 
+import net.minecraft.screen.slot.Slot;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
-import net.minecraft.screen.slot.Slot;
 
 @Mixin(net.minecraft.client.gui.screen.ingame.HandledScreen.class)
 public interface IMixinScreenWithHandler

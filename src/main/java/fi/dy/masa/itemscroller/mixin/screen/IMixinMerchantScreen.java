@@ -1,8 +1,8 @@
 package fi.dy.masa.itemscroller.mixin.screen;
 
+import net.minecraft.client.gui.screen.ingame.MerchantScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
-import net.minecraft.client.gui.screen.ingame.MerchantScreen;
 
 @Mixin(MerchantScreen.class)
 public interface IMixinMerchantScreen

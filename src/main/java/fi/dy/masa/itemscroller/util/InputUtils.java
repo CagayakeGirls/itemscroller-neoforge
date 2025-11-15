@@ -1,12 +1,10 @@
 package fi.dy.masa.itemscroller.util;
 
 import javax.annotation.Nullable;
-
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.input.KeyInput;
-
 import fi.dy.masa.malilib.hotkeys.IKeybind;
 import fi.dy.masa.malilib.hotkeys.KeybindMulti;
 import fi.dy.masa.malilib.util.GuiUtils;

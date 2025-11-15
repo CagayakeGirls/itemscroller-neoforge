@@ -9,14 +9,14 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import fi.dy.masa.itemscroller.config.Configs;
+import fi.dy.masa.itemscroller.villager.IMerchantScreenHandler;
+import fi.dy.masa.itemscroller.villager.VillagerUtils;
 import net.minecraft.screen.MerchantScreenHandler;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.village.Merchant;
 import net.minecraft.village.TradeOfferList;
-import fi.dy.masa.itemscroller.config.Configs;
-import fi.dy.masa.itemscroller.villager.IMerchantScreenHandler;
-import fi.dy.masa.itemscroller.villager.VillagerUtils;
 
 @Mixin(MerchantScreenHandler.class)
 public abstract class MixinMerchantScreenHandler extends ScreenHandler implements IMerchantScreenHandler
