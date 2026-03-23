@@ -37,7 +37,7 @@ repositories {
 }
 
 dependencies {
-    modImplementation "maven.modrinth:rocknroller:${mafglib_version}"
+    modImplementation "maven.modrinth:rocknroller:${rocknroller_version}"
 }
 ```
 
@@ -49,11 +49,11 @@ repositories {
 }
 
 dependencies {
-    modImplementation "team.cagayakegirls.rocknroller:rocknroller:${mafglib_version}"
+    modImplementation "team.cagayakegirls.rocknroller:rocknroller:${rocknroller_version}"
 }
 ```
 
-> Note: "${mafglib_version}" can be found in [Modrinth](https://modrinth.com/mod/rocknroller)
+> Note: "${rocknroller_version}" can be found in [Modrinth](https://modrinth.com/mod/rocknroller)
 
 ## Compiling
 - Clone the repository
