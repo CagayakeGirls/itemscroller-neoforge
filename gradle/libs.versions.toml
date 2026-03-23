@@ -9,8 +9,8 @@ mod-link = "https://github.com/CagayakeGirls/itemscroller-neoforge"
 version-env = "client"
 version-type = "release"
 
-platformId-curseforge = "912441"
-platformId-modrinth = "dCKRaeBC"
+platformId-curseforge = "916852"
+platformId-modrinth = "hYq29QmW"
 
 yarn-patch = "1.21+build.4"
 
