@@ -114,6 +114,8 @@ jar {
 	}
 }
 
+remapJar.atAccessWideners.add("itemscroller.accesswidener")
+
 tasks.publish.dependsOn build
 publishing {
 	publications {
