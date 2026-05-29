@@ -1,0 +1,56 @@
+modLoader="javafml"
+loaderVersion="${fml_version_range}"
+license="LGPLv3"
+issueTrackerURL="${mod_link}/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+displayURL="${mod_link}"
+logoFile="icon.png"
+credits="masa"
+authors="TexTrue, CagayakeGirls"
+description='''
+ItemScroller unofficial NeoForge port.
+Move items in inventory GUIs by scrolling the mouse wheel or dragging over slots.
+'''
+
+[[mods]]
+modId="itemscroller"
+version="${mod_version}"
+displayName="ItemScroller Stub"
+logoFile="assets/itemscroller/icon.png"
+credits="masa"
+authors="TexTrue, CagayakeGirls"
+description='''
+ItemScroller Stub.
+Move items in inventory GUIs by scrolling the mouse wheel or dragging over slots
+'''
+
+[[mixins]]
+config="mixins.itemscroller.json"
+
+[[dependencies."${mod_id}"]]
+modId="neoforge"
+type="required"
+versionRange="${neoforge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies."${mod_id}"]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies."${mod_id}"]]
+modId="mafglib"
+type="required"
+versionRange="${mafglib_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[foxified.classtweaker]]
+file="itemscroller.accesswidener"
